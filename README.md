@@ -13,3 +13,7 @@ An opinionated configuration for a spring boot maven project.
 ## Included Testing Dependencies
 * `spring-boot-starter-test` Starter for testing Spring Boot applications with libraries including JUnit, Hamcrest 
   and Mockito
+
+## Plugin Configuration
+* `spring-boot-maven-plugin` The [Spring Boot Maven Plugin](http://docs.spring.io/spring-boot/docs/current/reference/html/build-tool-plugins-maven-plugin.html)
+  provides Spring Boot support in Maven, allowing you to package executable jar or war archives and run an application “in-place”.
