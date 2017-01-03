@@ -20,3 +20,12 @@ An opinionated configuration for a spring boot maven project.
 * `pitest-maven` PIT mutation testing maven plugin. 
   * `pitest.mutation.threshold` Mutation score threshold at which to fail build.
   * `pitest.coverage.threshold` Line coverage threshold at which to fail build.
+
+## Howto?
+### Set the default password?
+Spring Boot Security by default configures a user 'user' and a random password which is printed on the console.
+This is ok for local testing, but not very practical when you start scaling you app as any server would use a
+different password.
+
+You could set the `security.user.password` property or export a shell variable `SECURITY_USER_PASSWORD`.
+For heroku an example command could be `heroku config set SECURITY_USER_PASSWORD=secret`.
